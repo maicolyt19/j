@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.page .content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.page h1, .page h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-size: 1.2em;
+}
+
+.final-page {
+  background-color: #111;
+  color: white;
+}
+
+.spotify-link img {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.spotify-link img:hover {
+  transform: scale(1.1);
+}
